@@ -1,0 +1,32 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Chatroom Exercise</title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+<div class="form">
+    <label for="message">Message</label><br>
+    <textarea id="message" name="message"></textarea><br><br>
+    <button type="submit" id="submitall" name="sendToAll" value="">SEND TO ALL</button><br><br>
+    <button type="submit" id="submitme" name="sendToMe" value="">SEND</button><br><br>
+</div>
+<div id="username" class="username">
+    <em>Name:</em>
+</div>
+<div id="target" class="target">
+    <em>Message:</em>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
